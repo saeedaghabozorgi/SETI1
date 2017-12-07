@@ -27,26 +27,22 @@ This repository includes 3 parts:
 - Classification of images using CCN on Multi GPU
 3) Prediction
 
-## SETI_img_to_binary_spark.ipynb
-##### Signal to Binary Files (Train&Test) using Spark
+### SETI_img_to_binary_spark.ipynb (Signal to Binary Files (Train&Test) using Spark)
 In this notebook we read the Basic 4 dataset through Spark, and convert signals into a binary file.
 
-## SETI_img_to-binary.ipynb
-##### Signal to Binary Files (Train&Test)  
+### SETI_img_to-binary.ipynb (Signal to Binary Files (Train&Test) )
 In this notebook we read the Basic 4 dataset and convert signals into a binary file. The format of output binary file is same as MNIST.
 
 
-##  SETI_CNN_Tf_SingleGpu.ipynb
-###  SETI Signal Classification on PowerAI with Single GPU
+###  SETI_CNN_Tf_SingleGpu.ipynb (SETI Signal Classification on PowerAI with Single GPU)
 In this Notebook, we will use the famous [SETI Dataset](https://github.com/setiQuest/ML4SETI/) to build a Convolutional Neural Networks capable to perform signals classification. CNN will say, with some associated error, what type of signal is the presented input.
 In our case, as we are running this notebook on [IBM PowerAI](http://cocl.us/SETI-NIMBIX-PowerAI), you hvae access to multi GPU, but we use one of the GPUs in this notebook, for the sake of simplicity.
 
-##  SETI_CNN_Tf_MultiGpu.ipynb
-###  SETI Signal Classification on PowerAI with Multi GPU
-In this Notebook, we will use the famous [SETI Dataset](https://github.com/setiQuest/ML4SETI/) to build a Convolutional Neural Networks capable to perform signals classification. CNN will say, with some associated error, what type of signal is the presented input. In this notebook, you will use IBM PowerAI with multiple GPU to train the model.
+###  SETI_CNN_Tf_MultiGpu.ipynb (SETI Signal Classification on PowerAI with Multi GPU)
+This Notebook, builds a Convolutional Neural Networks, but using multi GPUs. You will use IBM PowerAI with multiple GPU to train the model in parallel manner.
 
 
-##  SETI_prediction.ipynb
+###  SETI_prediction.ipynb
 In this notebook you can load a pre-trained model and predict the signal class.
 
 
