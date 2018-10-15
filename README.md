@@ -21,34 +21,19 @@ This pattern will assist application developers who need to efficiently build po
 This repository includes 3 parts:
 ### 1. Preparing dataset
   * **Converting images to binary files using Numpy (SETI_img_to-binary.ipynb)**
+      * In this notebook we read the Basic 4 dataset and convert signals into a binary file. Also, we split data into train/test datasets. 
   * **Optional: Converting images to binary files using Spark (SETI_img_to_binary_spark.ipynb)**  
-      * In this notebook we read the Basic 4 dataset through Spark, and convert signals into a binary file.
+      * In this notebook we read the Basic 4 dataset through Spark, and convert signals into a binary file. It is an optional notebook and you dont have to run it if you have already converted the images to binary files.
 ### 2. Classification
-- Classification of images using CCN on Single GPU (SETI_CNN_Tf_SingleGpu.ipynb)
-- Classification of images using CCN on Multi GPU (SETI_CNN_Tf_MultiGpu.ipynb) in case you have access to an environment with multiple GPUs
+ * **Classification of images using CCN on Single GPU (SETI_CNN_Tf_SingleGpu.ipynb)**
+     * In this Notebook, we will use the famous [SETI Dataset](https://github.com/setiQuest/ML4SETI/) to build a Convolutional Neural Networks capable to perform signals classification. CNN will say, with some associated error, what type of signal is the presented input.
+     * In our case, as we are running this notebook on [IBM PowerAI](http://cocl.us/SETI-NIMBIX-PowerAI), you hvae access to multi GPU, but we use one of the GPUs in this notebook, for the sake of simplicity.
+ * **Optional: Classification of images using CCN on Multi GPU (SETI_CNN_Tf_MultiGpu.ipynb)** 
+     * This Notebook, builds a Convolutional Neural Networks, but using multi GPUs. You will use IBM PowerAI with multiple GPU to train the model in parallel manner.
+     * You can run this notebook in case you have access to an environment with multiple GPUs.
 ### 3. Prediction
-- Use the trained model for prediciton (SETI_prediction.ipynb)
-
-
-
-### SETI_img_to_binary_spark.ipynb (Signal to Binary Files (Train&Test) using Spark)
-
-
-### SETI_img_to-binary.ipynb (Signal to Binary Files (Train&Test) )
-In this notebook we read the Basic 4 dataset and convert signals into a binary file. The format of output binary file is same as MNIST.
-
-
-###  SETI_CNN_Tf_SingleGpu.ipynb (SETI Signal Classification on PowerAI with Single GPU)
-In this Notebook, we will use the famous [SETI Dataset](https://github.com/setiQuest/ML4SETI/) to build a Convolutional Neural Networks capable to perform signals classification. CNN will say, with some associated error, what type of signal is the presented input.
-In our case, as we are running this notebook on [IBM PowerAI](http://cocl.us/SETI-NIMBIX-PowerAI), you hvae access to multi GPU, but we use one of the GPUs in this notebook, for the sake of simplicity.
-
-###  SETI_CNN_Tf_MultiGpu.ipynb (SETI Signal Classification on PowerAI with Multi GPU)
-This Notebook, builds a Convolutional Neural Networks, but using multi GPUs. You will use IBM PowerAI with multiple GPU to train the model in parallel manner.
-
-
-###  SETI_prediction.ipynb
-In this notebook you can load a pre-trained model and predict the signal class.
-
+* **Use the trained model for prediciton (SETI_prediction.ipynb)**
+     * In this notebook you can load a pre-trained model and predict the signal class.
 
 ### Performance
 Convelutional Neural Network involves a lot of matrix and vector multiplications that can parallelized, so GPUs can overperform, because GPUs were designed to handle these kind of matrix operations in parallel!
