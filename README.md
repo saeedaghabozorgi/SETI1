@@ -20,8 +20,8 @@ This pattern will assist application developers who need to efficiently build po
 ## Notebooks:
 This repository includes 3 parts:
 ### 1. Preparing dataset
-  * Converting images to binary files using Numpy (SETI_img_to-binary.ipynb)
-  * Optional: Converting images to binary files using Spark (SETI_img_to_binary_spark.ipynb)  
+  * **Converting images to binary files using Numpy (SETI_img_to-binary.ipynb)**
+  * **Optional: Converting images to binary files using Spark (SETI_img_to_binary_spark.ipynb)**  
       * In this notebook we read the Basic 4 dataset through Spark, and convert signals into a binary file.
 ### 2. Classification
 - Classification of images using CCN on Single GPU (SETI_CNN_Tf_SingleGpu.ipynb)
