@@ -1,4 +1,4 @@
-<a href="https://www.cognitiveclass.ai"><img src = "https://cognitiveclass.ai/wp-content/themes/bdu3.0/static/images/cc-logo.png" align = left></a>
+<a href="https://www.cognitiveclass.ai"><img src = "https://ibm.box.com/shared/static/qo20b88v1hbjztubt06609ovs85q8fau.png" align = left></a>
 
 <br>
 <br>
