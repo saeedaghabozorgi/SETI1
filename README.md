@@ -9,29 +9,30 @@ Each night, using the Allen Telescope Array (ATA) in northern California, the SE
 
 Our goal is to classify these accurately in real-time. This may allow the signal detection system to make better observational decisions, increase the efficiency of the nightly scans, and allow for explicit detection of these other signal types.
 
-For more information refer to [SETI hackathon page](https://github.com/setiQuest/ML4SETI/).
+For more information refer to [SETI hackathon page](https://github.com/setiQuest/ML4SETI/).  
 
 When you’ve completed this pattern, you will understand how to:
-•	Convert signal data into image data
-•	Build and train a convolutional neural networks
-•	Display and share results in Jupyter Notebooks
+-	Convert signal data into image data
+-	Build and train a convolutional neural networks
+-	Display and share results in Jupyter Notebooks
 This pattern will assist application developers who need to efficiently build powerful deep learning applications and use GPUs to train the model quickly. 
 
-
+## Notebooks:
 This repository includes 3 parts:
-##### 1) Preparing dataset
-- OptionalConverting images to binary files using Numpy (SETI_img_to-binary.ipynb)
-- Converting images to binary files using Spark (SETI_img_to_binary_spark.ipynb)
-##### 2) Classification
+### 1) Preparing dataset
+- Converting images to binary files using Numpy (SETI_img_to-binary.ipynb)
+- Optional: Converting images to binary files using Spark (SETI_img_to_binary_spark.ipynb)
+In this notebook we read the Basic 4 dataset through Spark, and convert signals into a binary file.
+### 2) Classification
 - Classification of images using CCN on Single GPU (SETI_CNN_Tf_SingleGpu.ipynb)
 - Classification of images using CCN on Multi GPU (SETI_CNN_Tf_MultiGpu.ipynb) in case you have access to an environment with multiple GPUs
-##### 3) Prediction
+### 3) Prediction
 - Use the trained model for prediciton (SETI_prediction.ipynb)
 
 
 
 ### SETI_img_to_binary_spark.ipynb (Signal to Binary Files (Train&Test) using Spark)
-In this notebook we read the Basic 4 dataset through Spark, and convert signals into a binary file.
+
 
 ### SETI_img_to-binary.ipynb (Signal to Binary Files (Train&Test) )
 In this notebook we read the Basic 4 dataset and convert signals into a binary file. The format of output binary file is same as MNIST.
