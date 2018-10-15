@@ -1,9 +1,6 @@
 <a href="https://www.cognitiveclass.ai"><img src = "https://ibm.box.com/shared/static/qo20b88v1hbjztubt06609ovs85q8fau.png" align = left height="50"></a>
 
-<br>
-<br>
 
---------------------
 # Search for Extra Terrestrial Intelligence (SETI)
 
 
